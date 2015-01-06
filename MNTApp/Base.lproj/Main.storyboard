@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v7J-Dr-jDK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -167,66 +167,143 @@
                         <outlet property="spinner" destination="1Jo-5A-Io6" id="YwT-Qe-QFl"/>
                         <outlet property="telCiteImage" destination="3tI-s5-Nmd" id="Yn6-4c-MQH"/>
                         <outlet property="trailingButtonConstraint" destination="kzQ-45-Nar" id="WqS-Lw-v2o"/>
-                        <segue destination="fKg-m6-UhV" kind="presentation" identifier="goHomeVC" id="2aP-0r-oqy"/>
+                        <segue destination="v7J-Dr-jDK" kind="show" identifier="goHomeVC" id="p1P-wz-16V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="mzb-sq-4eN">
+        <!--Agency-->
+        <scene sceneID="7qo-gc-eh4">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="fKg-m6-UhV" customClass="HomeViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jBS-NR-XCQ" customClass="AgencyViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GQ4-bh-tg6"/>
-                        <viewControllerLayoutGuide type="bottom" id="CPP-tH-nUl"/>
+                        <viewControllerLayoutGuide type="top" id="vfD-wf-Iu5"/>
+                        <viewControllerLayoutGuide type="bottom" id="eWo-kk-zaI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MPV-CD-8Ub">
+                    <view key="view" contentMode="scaleToFill" id="nbt-kn-QW5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ain-UR-K3B">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs8-b9-Qkg">
-                                        <rect key="frame" x="275" y="285" width="49" height="30"/>
-                                        <state key="normal" title="Logout">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="logoutClicked:" destination="fKg-m6-UhV" eventType="touchUpInside" id="H13-gx-9xj"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="Cs8-b9-Qkg" secondAttribute="centerX" id="L82-2G-Grf"/>
-                                    <constraint firstAttribute="centerY" secondItem="Cs8-b9-Qkg" secondAttribute="centerY" id="yDc-Ur-OYS"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CPP-tH-nUl" firstAttribute="top" secondItem="ain-UR-K3B" secondAttribute="bottom" id="fek-kO-2Y5"/>
-                            <constraint firstItem="ain-UR-K3B" firstAttribute="leading" secondItem="MPV-CD-8Ub" secondAttribute="leading" id="fyo-cF-uZT"/>
-                            <constraint firstItem="ain-UR-K3B" firstAttribute="top" secondItem="MPV-CD-8Ub" secondAttribute="top" id="sIN-R4-Vqi"/>
-                            <constraint firstAttribute="trailing" secondItem="ain-UR-K3B" secondAttribute="trailing" id="wli-nW-6JA"/>
-                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Agency" image="AgencyIcon" id="dgp-sX-oLA"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q1d-Gf-6To" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKt-FW-XEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253" y="446"/>
+            <point key="canvasLocation" x="2436" y="-3"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="KDC-8m-TXQ">
+            <objects>
+                <viewController id="Qos-bw-2r8" customClass="ProjectsViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gVl-gd-2LC"/>
+                        <viewControllerLayoutGuide type="bottom" id="qEq-5E-yg1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6tr-rE-7hH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Projects" image="ProjectsIcon" id="ylu-6b-ypq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jre-B9-Ax3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="795"/>
+        </scene>
+        <!--Services-->
+        <scene sceneID="2Nd-W2-I73">
+            <objects>
+                <viewController id="5O3-lg-mXh" customClass="ServicesViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="euD-Q5-jBx"/>
+                        <viewControllerLayoutGuide type="bottom" id="lRh-e8-3eO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z5g-qh-54b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Services" image="ServicesIcon" id="ovQ-ee-ZsI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOd-EE-eBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="1605"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="T7F-42-OX7">
+            <objects>
+                <viewController id="ZeN-Ny-YTJ" customClass="SettingsViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vut-Tj-gAB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rs3-5d-5rp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EBd-67-Ssx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsIcon" id="gfG-Hd-6IC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BtE-SU-ly4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="2462"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Cwx-tO-2HN">
+            <objects>
+                <viewController id="y5j-B5-1g4" customClass="HomeViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ncd-Vd-kUY"/>
+                        <viewControllerLayoutGuide type="bottom" id="QdF-9Z-cDH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wqa-SF-HgT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="uKR-ka-vB0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69Q-FN-hrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="-921"/>
+        </scene>
+        <!--Home Tab Bar View Controller-->
+        <scene sceneID="S9S-JM-ZYI">
+            <objects>
+                <tabBarController id="v7J-Dr-jDK" customClass="HomeTabBarViewController" customModule="MNTApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bgp-Bo-yDR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y5j-B5-1g4" kind="relationship" relationship="viewControllers" id="cCF-TX-wEK"/>
+                        <segue destination="jBS-NR-XCQ" kind="relationship" relationship="viewControllers" id="SJ7-27-pSO"/>
+                        <segue destination="Qos-bw-2r8" kind="relationship" relationship="viewControllers" id="5H6-74-amn"/>
+                        <segue destination="5O3-lg-mXh" kind="relationship" relationship="viewControllers" id="GSt-Ir-3ec"/>
+                        <segue destination="ZeN-Ny-YTJ" kind="relationship" relationship="viewControllers" id="S76-Ii-rhw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1n9-TD-VuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="445"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AgencyIcon" width="30" height="30"/>
         <image name="Barbanel" width="73" height="55"/>
         <image name="Happnow" width="183" height="59"/>
+        <image name="HomeIcon" width="30" height="30"/>
         <image name="JF" width="300" height="201"/>
         <image name="MNTDev" width="321" height="202"/>
         <image name="Nexity" width="100" height="100"/>
         <image name="PDM" width="300" height="201"/>
         <image name="Porsche" width="1000" height="330"/>
+        <image name="ProjectsIcon" width="30" height="21"/>
+        <image name="ServicesIcon" width="30" height="30"/>
+        <image name="SettingsIcon" width="30" height="30"/>
         <image name="TelCite" width="300" height="201"/>
         <image name="WW" width="300" height="201"/>
         <image name="banner" width="283" height="49"/>

@@ -101,7 +101,7 @@ class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
         
         if segue.identifier == "goHomeVC" {
             
-            let homeVC = segue.destinationViewController as HomeViewController
+            let homeVC = segue.destinationViewController as HomeTabBarViewController
             homeVC.transitioningDelegate = transitionDelegate
             homeVC.modalPresentationStyle = .Custom
             
