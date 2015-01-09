@@ -186,9 +186,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Agency" image="AgencyIcon" id="dgp-sX-oLA"/>
+                    <tabBarItem key="tabBarItem" title="Agency" image="AgencyIcon" id="dgp-sX-oLA" customClass="RAMAnimatedTabBarItem" customModule="MNTApp" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="uGI-Zf-HIs" id="igE-Ez-MTa"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKt-FW-XEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="uGI-Zf-HIs" customClass="RAMBounceAnimation" customModule="MNTApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2436" y="-3"/>
         </scene>
@@ -205,9 +210,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Projects" image="ProjectsIcon" id="ylu-6b-ypq"/>
+                    <tabBarItem key="tabBarItem" title="Projects" image="EmptyImage" id="ylu-6b-ypq" customClass="RAMAnimatedTabBarItem" customModule="MNTApp" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="f6Q-53-XHw" id="19p-lH-4or"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jre-B9-Ax3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="f6Q-53-XHw" customClass="RAMBounceAnimation" customModule="MNTApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2436" y="795"/>
         </scene>
@@ -224,9 +234,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Services" image="ServicesIcon" id="ovQ-ee-ZsI"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="ServicesIcon" id="ovQ-ee-ZsI" customClass="RAMAnimatedTabBarItem" customModule="MNTApp" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="lNv-Jy-zl8" id="Vbd-0m-85s"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOd-EE-eBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="lNv-Jy-zl8" customClass="RAMBounceAnimation" customModule="MNTApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2436" y="1605"/>
         </scene>
@@ -243,9 +258,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsIcon" id="gfG-Hd-6IC"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsIcon" id="gfG-Hd-6IC" customClass="RAMAnimatedTabBarItem" customModule="MNTApp" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="bdr-2f-f5n" id="WKL-Xd-hUg"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtE-SU-ly4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bdr-2f-f5n" customClass="RAMBounceAnimation" customModule="MNTApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2436" y="2462"/>
         </scene>
@@ -262,9 +282,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="uKR-ka-vB0"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="uKR-ka-vB0" customClass="RAMAnimatedTabBarItem" customModule="MNTApp" customModuleProvider="target">
+                        <connections>
+                            <outlet property="animation" destination="PhB-Fb-wve" id="Go5-io-dNH"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69Q-FN-hrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="PhB-Fb-wve" customClass="RAMBounceAnimation" customModule="MNTApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="2436" y="-921"/>
         </scene>
@@ -294,6 +319,7 @@
     <resources>
         <image name="AgencyIcon" width="30" height="30"/>
         <image name="Barbanel" width="73" height="55"/>
+        <image name="EmptyImage" width="1" height="1"/>
         <image name="Happnow" width="183" height="59"/>
         <image name="HomeIcon" width="30" height="30"/>
         <image name="JF" width="300" height="201"/>
@@ -301,7 +327,6 @@
         <image name="Nexity" width="100" height="100"/>
         <image name="PDM" width="300" height="201"/>
         <image name="Porsche" width="1000" height="330"/>
-        <image name="ProjectsIcon" width="30" height="21"/>
         <image name="ServicesIcon" width="30" height="30"/>
         <image name="SettingsIcon" width="30" height="30"/>
         <image name="TelCite" width="300" height="201"/>
